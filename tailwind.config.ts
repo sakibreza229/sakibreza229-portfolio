@@ -1,10 +1,12 @@
-import type { Config } from "tailwindcss";
+const {nextui} = require("@nextui-org/react");
 
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -13,6 +15,18 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      primary: [`var(--font-poppins)`, `sans-serif`],
+      secondary: [`var(--font-ubuntu)`, `sans-serif`],
+    },
+    screens: {
+      xs: "378px",
+      sm: "576px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
   },
-  plugins: [],
-} satisfies Config;
+  darkMode: "class",
+  plugins: [nextui()],
+};
