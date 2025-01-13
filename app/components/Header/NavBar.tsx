@@ -51,7 +51,7 @@ const NavBar: React.FC = () => {
 
   return (
     <div
-      className="nav-menu fixed lg:static bottom-0 left-0 bg-white lg:bg-transparent w-full lg:w-auto h-16 lg:h-auto px-2 rounded-t-3xl lg:rounded-t-none content-center shadow-2xl lg:shadow-none"
+      className="nav-menu fixed lg:static bottom-0 left-0 bg-container lg:bg-transparent w-full lg:w-auto h-16 lg:h-auto px-2 rounded-t-3xl lg:rounded-t-none content-center shadow-2xl lg:shadow-none"
       id="nav-menu"
     >
       <div className="flex justify-around items-center sm:justify-center sm:gap-x-8 md:gap-x-6">

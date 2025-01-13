@@ -12,10 +12,10 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="pb-12 lg:pb-0 relative">
-      <div className="bg-[#ccccff] border-y-2 border-solid border-white px-2 pt-24 md:pt-36 lg:pt-28 pb-12">
+      <div className="bg-primary-dark border-y-2 border-solid border-white px-2 pt-24 md:pt-36 lg:pt-28 pb-12">
         <div className="grid grid-cols-1 items-center justify-center gap-y-5 lg:grid-cols-3 max-w-screen-xl mx-auto px-8">
           {/* footer title */}
-          <div className="flex flex-col lg:flex-row justify-center items-center gap-2">
+          <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center gap-2">
             <Image
               src="/images/logo.png"
               alt="personal logo"
@@ -45,7 +45,7 @@ const Footer = () => {
           </ul>
 
           {/* footer social */}
-          <div className="flex justify-self-center lg:justify-self-end leading-3 *:inline-flex *:ml-4 *:transition-all">
+          <div className="flex justify-self-center lg:justify-self-end leading-3 text-secondary *:inline-flex *:ml-4 *:transition-all">
             <Tooltip
               content="Facebook/sakibreza229"
               showArrow={true}

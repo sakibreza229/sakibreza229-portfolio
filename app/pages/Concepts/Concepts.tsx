@@ -1,8 +1,11 @@
 import React from 'react'
+import { HeadingPrimary } from '@/app/components/Headings'
 
 const Concepts = () => {
   return (
-    <div>Concepts</div>
+    <section id='concepts' className='section-container section-concepts'>
+      <HeadingPrimary title='Concepts' subtitle='My Creative Concepts' />
+    </section>
   )
 }
 

@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${poppins.variable} ${ubuntu.variable} font-primary font-normal antialiased`}
+        className={`${poppins.variable} ${ubuntu.variable} font-primary font-normal antialiased bg-background text-foreground`}
       >
         {children}
       </body>

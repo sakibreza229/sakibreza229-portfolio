@@ -23,11 +23,11 @@ export const HeadingPrimary: React.FC<HeadingPrimaryProps> = ({
       <div className="text-center sm:text-left mb-4 md:mb-0">
         <div className="flex justify-center sm:justify-normal items-center gap-x-4">
           <span className="hidden sm:inline h-[2px] w-[60px] bg-primary-light"></span>
-          <h2 className="font-bold text-3xl md:font-medium text-[#000033] md:text-primary md:text-xl capitalize">
+          <h2 className="font-bold text-3xl md:font-medium text-foreground md:text-primary md:text-xl capitalize">
             {title}
           </h2>
         </div>
-        <p className="md:font-bold font-medium text-sm md:text-4xl text-primary md:text-[#000033] md:font-secondary mt-1">
+        <p className="md:font-bold font-medium text-sm md:text-4xl text-primary md:text-foreground md:font-secondary mt-1">
           {subtitle}
         </p>
       </div>
@@ -42,7 +42,7 @@ export const HeadingSecondary: React.FC<HeadingSecondaryProps> = ({
 }) => {
   return (
     <>
-      <h2 className="text-center font-bold text-3xl md:text-4xl text-[#000033] mt-12 mb-1 capitalize">
+      <h2 className="text-center font-bold text-3xl md:text-4xl font-secondary text-foreground mt-12 mb-1 capitalize">
         {title}
       </h2>
       <span className="block text-center font-medium text-primary text-sm mb-8 md:mb-10">

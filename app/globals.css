@@ -2,19 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* layout style */
+::selection {
+  @apply bg-primary text-white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+section {
+  @apply pt-12 py-8;
+}
+
+.section-container {
+  @apply max-w-screen-xl mx-auto px-2 lg:px-4;
+}
+
+/* header styles */
+.scroll-header {
+  @apply bg-white dark:bg-[#151527] [box-shadow:0_1px_12px_hsla(234,5%,15%,0.15)] dark:[box-shadow:0_1px_8px_hsla(254,5%,15%,0.35)];
+}
+
+.scroll-header .nav {
+  height: 3.5rem;
+  @apply text-foreground;
+  .nav-logo a {
+    @apply text-[#000047] dark:text-[#a3a3ff] hover:text-primary-hover;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
+.nav {
+  height: 5rem;
+}
+
+.active-link {
+  @apply text-primary;
+  transition: .3s;
+}
+
+.active-link::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  @apply w-2 h-1 rounded-l-full rounded-r-full md:hidden bg-primary; 
 }

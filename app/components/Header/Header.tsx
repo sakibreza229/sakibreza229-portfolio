@@ -32,20 +32,21 @@ const Header = () => {
       className="fixed top-0 left-0 w-full px-2 z-50 flex items-center transition-all duration-300 ease-linear"
       id="header"
     >
-      <nav className="nav text-typography-title lg:text-typography-light flex justify-between items-center mx-auto max-w-screen-xl xl:px-8 w-full transition-all duration-200 ease-linear">
-        <div className="flex items-center gap-x-2 nav-logo">
+      <nav className="nav text-foreground flex justify-between items-center mx-auto max-w-screen-xl xl:px-8 w-full transition-all duration-200 ease-linear">
+        <div className="flex items-center gap-x-4 nav-logo">
           <Badge color="success" content="" placement="bottom-right" shape="circle">
             <Avatar
               isBordered 
               radius="full"
               color="primary"
               src="/avatar.webp"
+              showFallback
               className="w-8 h-8"
             />
           </Badge>
           <a
             href="#"
-            className="font-bold text-xl sm:text-2xl font-ubuntu text-[#000047] hover:text-primary transition-colors"
+            className="font-bold text-xl sm:text-2xl font-secondary text-[#b8b8ff] hover:text-primary transition-colors"
           >
             Sakib Reza<span className="text-primary">.</span>
           </a>
