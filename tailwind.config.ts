@@ -29,13 +29,15 @@ module.exports = {
         },
         "rotate-up": {
           "0%": {
-            transform: "translateY(0) rotate(0deg)",
+            transform: "rotate(0deg)",
             opacity: "1",
-            borderRadius: "0",
+            bottom: "0",
+            borderRadius: "10%",
           },
           "100%": {
-            transform: "translateY(-1000px) rotate(720deg)",
+            transform: "rotate(720deg)",
             opacity: "0",
+            bottom: "85vh",
             borderRadius: "50%",
           },
         },
@@ -83,13 +85,13 @@ module.exports = {
             background: "#E0E0FF",
             foreground: "#000033",
             container: "#F5F5FF",
+            layout: "#CCCCFF",
 
             // light mode primary color
             primary: {
               DEFAULT: "#6C6CFF",
               hover: "#573DEE",
-              light: "#CCCCFF",
-              dark: "#C4CBFF",
+              light: "#C4CBFF",
             },
 
             // light mode secondary color
@@ -101,12 +103,12 @@ module.exports = {
             background: "#151527",
             foreground: "#FFFFFF",
             container: "#1F2544",
+            layout: "#151527",
 
             // dark mode primary color
             primary: {
               DEFAULT: "#6364FF",
               light: "#7A7AFF",
-              dark: "#151527",
             },
 
             // dark mode secondary color

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* layout style */
+html {
+  @apply scroll-smooth;
+}
+
 ::selection {
   @apply bg-primary text-white;
 }
@@ -12,7 +16,7 @@ section {
 }
 
 .section-container {
-  @apply max-w-screen-xl mx-auto px-2 lg:px-4;
+  @apply max-w-screen-xl mx-auto px-2 lg:px-8;
 }
 
 /* header styles */
@@ -42,4 +46,18 @@ section {
   position: absolute;
   bottom: -8px;
   @apply w-2 h-1 rounded-l-full rounded-r-full md:hidden bg-primary; 
+}
+
+/* extra animations */
+.animate-bounceUp {
+  animation: bounceUp 2s infinite ease-in-out;
+}
+
+@keyframes bounceUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }

@@ -30,9 +30,9 @@ const ScrollToTop: React.FC = () => {
     <button
       onClick={scrollToTop}
       aria-label="Scroll to top"
-      className={`fixed right-4 xl:right-6 ${isVisible ? 'bottom-10' : '-bottom-20'} 
+      className={`fixed right-2 xl:right-4 ${isVisible ? 'bottom-12' : '-bottom-20'} 
       z-50 bg-primary text-white opacity-80 hover:opacity-100 text-xl p-2 rounded-xl 
-      cursor-pointer transition-all ease-in-out duration-300 shadow-xl`}
+      cursor-pointer transition-all ease-in-out duration-500 shadow-xl`}
     >
       <FaArrowUp />
     </button>

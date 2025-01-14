@@ -4,7 +4,7 @@ import Link from "next/link";
 interface NavItemProps {
   sectionId: string;
   navName: string;
-  navIcon: React.ReactNode; // Use React.ReactNode for the icon
+  navIcon: React.ReactNode;
 }
 
 const NavItem: React.FC<NavItemProps> = ({ sectionId, navName, navIcon }) => {

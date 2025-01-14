@@ -14,7 +14,7 @@ const ActionMenu = () => {
         }`}
         aria-label="Extra Menu"
       >
-        {isOpen ? <FaTimes /> : <SiPolkadot />}
+        {isOpen ? <FaTimes /> : <SiPolkadot className="animate-spin hover:animate-none" />}
       </button>
 
       {/* menu buttons */}

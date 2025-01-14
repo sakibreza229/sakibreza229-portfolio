@@ -5,7 +5,7 @@ import ActionMenu from "./ActionMenu";
 
 const FloatingActionMenu = () => {
   return (
-    <div className="fixed top-28 lg:top-36 right-1 xl:right-4 z-50 space-y-10">
+    <div className="fixed top-28 lg:top-36 right-1 xl:right-2 z-50 space-y-10">
       {/* theme toggler */}
       <ThemeSwitcher />
       {/* action menu */}
