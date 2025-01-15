@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Tooltip } from "@nextui-org/react";
 import Link from "next/link";
@@ -26,8 +28,8 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
           {/* Hero Image and Badges */}
           <div className="relative self-center order-1 sm:order-2">
-            <HeroBadge text="Years of Experience" number="5+" position="top-[60%] -left-12" />
-            <HeroBadge text="Satisfied Clients" number="50+" position="bottom-6 -right-4" />
+            <HeroBadge label="Years of Experience" targetNumber={5} sign="+" position="top-[60%] -left-12" duration={400} />
+            <HeroBadge label="Satisfied Clients" targetNumber={45} sign="+" position="bottom-6 -right-4" duration={100} />
 
             <svg
               className="w-56 fill-primary md:w-72 lg:w-96"
@@ -46,7 +48,7 @@ const Hero = () => {
 
           {/* Hero Text */}
           <div className="max-w-[598px] text-center md:text-left order-2 md:order-1">
-            <h6 className="font-medium text-[#6c6cff] dark:text-[#f0f8f5] mt-4 md:mt-0 mb-2 md:mb-4">
+            <h6 className="font-medium text-primary mt-4 md:mt-0 mb-2 md:mb-4">
               Hello, my name is <span className="animate-blink font-bold text-foreground">_</span>
             </h6>
             <h1 className="font-bold text-4xl sm:text-7xl font-secondary text-foreground">
@@ -98,7 +100,6 @@ const Hero = () => {
       </div>
 
       {/* Background Decorations */}
-      <div className="bg-secondary absolute -top-16 left-[50px] transform translate-x-[-50%] blur-[180px] w-[250px] h-[250px] rounded-full z-[-1]"></div>
       <div className="bg-primary absolute top-[20%] right-0 transform translate-x-[-50%] blur-[180px] w-[280px] h-[280px] rounded-full z-[-1]"></div>
 
       {/* Animated Background */}
