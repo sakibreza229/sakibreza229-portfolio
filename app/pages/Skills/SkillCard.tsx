@@ -15,15 +15,26 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   return (
     <Tooltip content={skill.level} color="primary" showArrow={true}>
-      <div className="w-24 h-24 flex flex-col justify-center items-center border-2 border-solid border-gray-300 dark:border-secondary hover:border-primary-light bg-container p-4 shadow-md rounded-xl cursor-help group">
+      <div
+        className="w-24 h-24 flex flex-col justify-center items-center 
+                   border-2 border-gray-300 dark:border-secondary 
+                   bg-container p-4 shadow-md rounded-xl cursor-pointer 
+                   group hover:border-primary hover:shadow-lg 
+                   transition-all duration-300"
+        aria-label={`Skill: ${skill.name}, Level: ${skill.level}`}
+      >
         <Image
           src={skill.image}
           alt={`${skill.name} Icon`}
           width={42}
           height={42}
-          className="mb-2 group-hover:scale-110 transition-transform"
+          className="mb-2 group-hover:scale-110 transition-transform duration-300"
+          loading="lazy" // Optimized for performance
         />
-        <p className="text-xs text-neutral-400 dark:text-secondary font-semibold text-center font-secondary">
+        <p
+          className="text-xs text-neutral-500 dark:text-secondary 
+                     font-semibold text-center font-secondary"
+        >
           {skill.name}
         </p>
       </div>
