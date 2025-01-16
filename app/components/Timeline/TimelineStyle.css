@@ -1,0 +1,33 @@
+.timeline-card {
+    width: calc(50% - 40px);
+}
+
+.row-1 {
+    @apply justify-end md:justify-start;
+}
+
+.row-2 {
+    @apply justify-end;
+}
+
+.row-1 .timeline-card {
+    @apply before:-left-2 md:before:left-auto md:before:-right-2;
+}
+
+.row-2 .timeline-card {
+    @apply before:-left-2;
+}
+
+.row-1 .icon {
+    @apply right-auto md:-right-[59px];
+}
+
+.row-2 .icon {
+    @apply -left-[59px];
+}
+
+@media(max-width: 767px) {
+    .timeline-card {
+        width: calc(100% - 40px);
+    }
+}
