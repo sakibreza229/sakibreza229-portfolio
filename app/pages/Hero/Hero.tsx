@@ -46,7 +46,7 @@ const Hero = () => {
 
           {/* Hero Text */}
           <div className="max-w-[598px] text-center md:text-left order-2 md:order-1">
-            <h6 className="font-medium text-primary mt-4 md:mt-0 mb-2 md:mb-4">
+            <h6 className="font-medium text-[#6364FF] dark:text-[#F0F8FF] mt-4 md:mt-0 mb-2 md:mb-4">
               Hello, my name is <span className="animate-blink font-bold text-foreground">_</span>
             </h6>
             <h1 className="font-bold text-4xl sm:text-7xl font-secondary text-foreground">

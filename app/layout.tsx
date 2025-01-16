@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${ubuntu.variable} font-primary font-normal antialiased bg-background text-foreground`}
+        className={`${poppins.variable} ${ubuntu.variable} font-primary font-normal antialiased bg-background text-foreground text-base`}
       >
         {children}
       </body>
