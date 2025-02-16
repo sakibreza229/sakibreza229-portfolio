@@ -61,8 +61,8 @@ export const languages = [
           y2="1151.089"
           gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
         >
-          <stop offset="0" stop-color="#5A9FD4"></stop>
-          <stop offset="1" stop-color="#306998"></stop>
+          <stop offset="0" stopColor="#5A9FD4"></stop>
+          <stop offset="1" stopColor="#306998"></stop>
         </linearGradient>
         <linearGradient
           id="python-original-b"
@@ -73,8 +73,8 @@ export const languages = [
           y2="1149.537"
           gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
         >
-          <stop offset="0" stop-color="#FFD43B"></stop>
-          <stop offset="1" stop-color="#FFE873"></stop>
+          <stop offset="0" stopColor="#FFD43B"></stop>
+          <stop offset="1" stopColor="#FFE873"></stop>
         </linearGradient>
         <path
           fill="url(#python-original-a)"
@@ -94,8 +94,8 @@ export const languages = [
           gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"></stop>
-          <stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop>
+          <stop offset="0" stopColor="#B8B8B8" stop-opacity=".498"></stop>
+          <stop offset="1" stopColor="#7F7F7F" stop-opacity="0"></stop>
         </radialGradient>
         <path
           opacity=".444"
@@ -192,8 +192,8 @@ export const languages = [
           y2="45.52"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#3940a4"></stop>
-          <stop offset="1" stop-color="#293091"></stop>
+          <stop offset="0" stopColor="#3940a4"></stop>
+          <stop offset="1" stopColor="#293091"></stop>
         </linearGradient>
         <path
           fill="url(#9nBOzQEsA2vJDj4A8wbora_shQTXiDQiQVR_gr1)"
@@ -209,8 +209,8 @@ export const languages = [
           y2="31.562"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#7b83eb"></stop>
-          <stop offset="1" stop-color="#5961c3"></stop>
+          <stop offset="0" stopColor="#7b83eb"></stop>
+          <stop offset="1" stopColor="#5961c3"></stop>
         </linearGradient>
         <path
           fill="url(#9nBOzQEsA2vJDj4A8wborb_shQTXiDQiQVR_gr2)"
@@ -232,8 +232,8 @@ export const languages = [
           y2="36.777"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#5c65d6"></stop>
-          <stop offset=".999" stop-color="#464eb0"></stop>
+          <stop offset="0" stopColor="#5c65d6"></stop>
+          <stop offset=".999" stopColor="#464eb0"></stop>
         </linearGradient>
         <path
           fill="url(#9nBOzQEsA2vJDj4A8wborc_shQTXiDQiQVR_gr3)"
@@ -431,9 +431,9 @@ export const frameworks = [
           y2="4.266"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#0a070a"></stop>
-          <stop offset=".465" stop-color="#2b2b2b"></stop>
-          <stop offset="1" stop-color="#4b4b4b"></stop>
+          <stop offset="0" stopColor="#0a070a"></stop>
+          <stop offset=".465" stopColor="#2b2b2b"></stop>
+          <stop offset="1" stopColor="#4b4b4b"></stop>
         </linearGradient>
         <circle
           cx="24"
@@ -456,9 +456,9 @@ export const frameworks = [
           y2="18.431"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".377" stop-color="#fff" stop-opacity="0"></stop>
-          <stop offset=".666" stop-color="#fff" stop-opacity=".3"></stop>
-          <stop offset=".988" stop-color="#fff"></stop>
+          <stop offset=".377" stopColor="#fff" stop-opacity="0"></stop>
+          <stop offset=".666" stopColor="#fff" stop-opacity=".3"></stop>
+          <stop offset=".988" stopColor="#fff"></stop>
         </linearGradient>
         <rect
           width="2.953"
@@ -475,9 +475,9 @@ export const frameworks = [
           y2="40.529"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".296" stop-color="#fff"></stop>
-          <stop offset=".521" stop-color="#fff" stop-opacity=".5"></stop>
-          <stop offset=".838" stop-color="#fff" stop-opacity="0"></stop>
+          <stop offset=".296" stopColor="#fff"></stop>
+          <stop offset=".521" stopColor="#fff" stop-opacity=".5"></stop>
+          <stop offset=".838" stopColor="#fff" stop-opacity="0"></stop>
         </linearGradient>
         <polygon
           fill="url(#NRNx2IPDe7PJlJvrxOKgWc_MWiBjkuHeMVq_gr3)"
@@ -550,16 +550,16 @@ export const frameworks = [
           y2="7"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#643499"></stop>
-          <stop offset=".011" stop-color="#68369f"></stop>
-          <stop offset=".135" stop-color="#773db6"></stop>
-          <stop offset=".193" stop-color="#8042c3"></stop>
-          <stop offset=".248" stop-color="#8343c8"></stop>
-          <stop offset=".388" stop-color="#8444c9"></stop>
-          <stop offset=".732" stop-color="#9751d2"></stop>
-          <stop offset=".997" stop-color="#9c55d4"></stop>
-          <stop offset=".998" stop-color="#9c55d4"></stop>
-          <stop offset="1" stop-color="#9c55d4"></stop>
+          <stop offset="0" stopColor="#643499"></stop>
+          <stop offset=".011" stopColor="#68369f"></stop>
+          <stop offset=".135" stopColor="#773db6"></stop>
+          <stop offset=".193" stopColor="#8042c3"></stop>
+          <stop offset=".248" stopColor="#8343c8"></stop>
+          <stop offset=".388" stopColor="#8444c9"></stop>
+          <stop offset=".732" stopColor="#9751d2"></stop>
+          <stop offset=".997" stopColor="#9c55d4"></stop>
+          <stop offset=".998" stopColor="#9c55d4"></stop>
+          <stop offset="1" stopColor="#9c55d4"></stop>
         </linearGradient>
         <path
           fill="url(#Q_pn21O5LDDqwJlze0Upoa_g9mmSxx3SwAI_gr1)"
@@ -619,8 +619,8 @@ export const frameworks = [
           y2="33.216"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#6d7479"></stop>
-          <stop offset="1" stop-color="#323538"></stop>
+          <stop offset="0" stopColor="#6d7479"></stop>
+          <stop offset="1" stopColor="#323538"></stop>
         </linearGradient>
         <path
           fill="url(#Xfeb2ANkiLrn2PxL5jJHLa_PZQVBAxaueDJ_gr1)"
@@ -671,9 +671,9 @@ export const frameworks = [
           y2="42.736"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#f44f5a"></stop>
-          <stop offset=".443" stop-color="#ee3d4a"></stop>
-          <stop offset="1" stop-color="#e52030"></stop>
+          <stop offset="0" stopColor="#f44f5a"></stop>
+          <stop offset=".443" stopColor="#ee3d4a"></stop>
+          <stop offset="1" stopColor="#e52030"></stop>
         </linearGradient>
         <path
           fill="url(#hqBdiw7hWbh_bf9we5wHOa_jH4BpkMnRrU5_gr1)"
@@ -860,8 +860,8 @@ export const tools = [
             y2="23.532"
             gradientTransform="scale(4)"
           >
-            <stop offset=".176" stop-color="#0052cc"></stop>
-            <stop offset="1" stop-color="#2684ff"></stop>
+            <stop offset=".176" stopColor="#0052cc"></stop>
+            <stop offset="1" stopColor="#2684ff"></stop>
           </linearGradient>
         </defs>
         <path
@@ -1007,8 +1007,8 @@ export const tools = [
             gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#34364e" stop-opacity=".98"></stop>
-            <stop offset="1" stop-color="#0c0824"></stop>
+            <stop offset="0" stopColor="#34364e" stop-opacity=".98"></stop>
+            <stop offset="1" stopColor="#0c0824"></stop>
           </radialGradient>
           <path
             d="M24.803 155.549h545.674v530.792H24.803V155.549z"
@@ -1046,8 +1046,8 @@ export const tools = [
             gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#423325" stop-opacity=".98"></stop>
-            <stop offset="1" stop-color="#1c0a00"></stop>
+            <stop offset="0" stopColor="#423325" stop-opacity=".98"></stop>
+            <stop offset="1" stopColor="#1c0a00"></stop>
           </radialGradient>
           <path
             d="M24.803 155.549h545.674v530.792H24.803V155.549z"
@@ -1101,8 +1101,8 @@ export const tools = [
             gradientTransform="scale(.5)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#2684ff"></stop>
-            <stop offset="1" stop-color="#0052cc"></stop>
+            <stop offset="0" stopColor="#2684ff"></stop>
+            <stop offset="1" stopColor="#0052cc"></stop>
           </linearGradient>
         </defs>
         <path

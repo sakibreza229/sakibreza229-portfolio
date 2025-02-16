@@ -48,6 +48,16 @@ section {
   @apply w-2 h-1 rounded-l-full rounded-r-full md:hidden bg-primary; 
 }
 
+.arrow-btn {
+  @apply font-medium text-primary cursor-pointer inline-flex items-center;
+  gap: 6px;
+}
+
+.arrow-btn:hover .arrow {
+  transform: translateX(0.25rem);
+  transition: all 0.3s ease;
+}
+
 /* extra animations */
 .animate-bounceUp {
   animation: bounceUp 2s infinite ease-in-out;

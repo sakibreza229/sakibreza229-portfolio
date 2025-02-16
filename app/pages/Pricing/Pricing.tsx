@@ -24,7 +24,7 @@ const Pricing = () => {
               key={title}
               className={`${
                 isRecommended ? "relative py-16" : "py-10"
-              } px-10 bg-white text-center rounded-[3rem] shadow-xl cursor-help hover:scale-105 transition-transform`}
+              } px-10 bg-container text-center rounded-[3rem] shadow-xl cursor-help hover:scale-105 transition-transform`}
             >
               <Image
                 src={imgSrc}
