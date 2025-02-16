@@ -1,11 +1,10 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Tooltip } from "@nextui-org/react";
-import Image from "next/image";
 
 interface Skill {
   name: string;
   level: string;
-  image: JSX.Element;
+  image: ReactNode;
 }
 
 interface SkillCardProps {
@@ -23,15 +22,10 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
                    transition-all duration-300"
         aria-label={`Skill: ${skill.name}, Level: ${skill.level}`}
       >
+
+        {/* Skills Image */}
         {skill.image}
-        {/* <Image
-          src={skill.image}
-          alt={`${skill.name} Icon`}
-          width={42}
-          height={42}
-          className="mb-2 group-hover:scale-110 transition-transform duration-300"
-          loading="lazy" // Optimized for performance
-        /> */}
+      
         <p
           className="text-xs text-neutral-500 dark:text-secondary 
                      font-semibold text-center font-secondary"
