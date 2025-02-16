@@ -21,9 +21,9 @@ const Skills: FC = () => {
   const TabButton: FC<{ tab: "languages" | "frameworks" | "tools"; label: string }> = ({ tab, label }) => (
     <button
       onClick={() => handleTab(tab)}
-      className={`transition-colors inline-flex items-center gap-1 px-4 py-2 rounded-xl text-sm font-medium ${
+      className={`transition-colors inline-flex items-center gap-2 font-secondary font-medium ${
         activeTab === tab
-          ? "bg-primary text-white"
+          ? "text-primary"
           : "text-gray-500 dark:text-gray-400 hover:text-gray-400 dark:hover:text-gray-500"
       }`}
     >

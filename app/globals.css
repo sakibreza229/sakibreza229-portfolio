@@ -71,3 +71,16 @@ section {
     transform: translateY(-5px);
   }
 }
+
+/* swiper style */
+
+.swiper {
+  padding-bottom: 2.5rem !important;
+}
+.swiper-pagination-bullet {
+  @apply bg-primary-light !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary !important;
+}

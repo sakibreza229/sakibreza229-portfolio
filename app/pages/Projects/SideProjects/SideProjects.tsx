@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeadingSecondary } from '@/app/components/Headings';
+import { HeadingPrimary } from '@/app/components/Headings';
 import { sideProjects } from '@/app/data/ProjectsData';
 import { FaGithub, FaArrowRight } from 'react-icons/fa6';
 import { useScroll, motion, useTransform, MotionValue } from 'framer-motion';
@@ -94,9 +94,9 @@ const SideProjects = () => {
 
   return (
     <section className="section-container section-side-projects">
-      <HeadingSecondary title='Side Projects' subtitle='My popular contributions' />
+      <HeadingPrimary title='Side Projects' subtitle='My popular contributions' />
 
-      <div ref={container} className='pt-8 pb-[8vh]'>
+      <div ref={container} className='pt-8 pb-[8vh] mx-auto max-w-screen-lg'>
         {sideProjects.map((sideProject: SideProject, i: number) => {
           const targetScale = 1 - (sideProjects.length - i) * 0.05;
           return (

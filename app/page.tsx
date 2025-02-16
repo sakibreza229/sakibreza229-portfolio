@@ -16,12 +16,10 @@ import Qualification from "./pages/Qualification/Qualification";
 import Services from "./pages/Services/Services";
 import SideProjects from "./pages/Projects/SideProjects/SideProjects";
 import PortfolioProjects from "./pages/Projects/PortfolioProjects/PortfolioProjects";
-import InnovativeWorks from "./pages/InnovativeWorks/InnovativeWorks";
 import CreativeProjects from "./pages/Projects/CreativeProjects/CreativeProjects";
 import Pricing from "./pages/Pricing/Pricing";
-import Concepts from "./pages/Concepts/Concepts";
-import Blogs from "./pages/Blogs/Blogs";
 import Testimonial from "./pages/Testimonial/Testimonial";
+import Blogs from "./pages/Blogs/Blogs";
 import Contact from "./pages/Contact/Contact";
 import FloatingActionMenu from "./utils/FloatingMenu/FloatingActionMenu";
 import ScrollToTop from "./utils/ScrollToTop";
@@ -41,10 +39,8 @@ export default function Home() {
           <PortfolioProjects />
           <CreativeProjects />
           <Pricing />
-          <InnovativeWorks />
-          <Concepts />
-          <Blogs />
           <Testimonial />
+          <Blogs />
           <Contact />
         </main>
         <Footer />
