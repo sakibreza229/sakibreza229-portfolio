@@ -33,10 +33,10 @@ const AwardCard: React.FC<AwardCardProps> = ({ awardsData }) => {
 
           {/* Content Section */}
           <div className={`${idx % 2 !== 0 ? "order-1 text-right" : ""}`}>
-            <h3 className="text-2xl font-semibold text-typography-title">
+            <h3 className="text-2xl font-semibold">
               {award.title}
             </h3>
-            <p className="mt-2 text-primary text-sm">
+            <p className={`mt-2 ${idx % 2 == 0 ? "text-primary" : "text-secondary"} text-sm`}>
               <strong>Date:</strong> {award.date} • <strong>Issued by:</strong>{" "}
               {award.issuer}
             </p>
@@ -44,11 +44,11 @@ const AwardCard: React.FC<AwardCardProps> = ({ awardsData }) => {
 
             {/* Action Buttons */}
             <div className={`flex gap-x-4 ${idx % 2 !== 0 ? "justify-end" : ""}`}>
-              <Button color="primary" startContent={<PiCertificateFill />}>
+              <Button color={idx % 2 == 0 ? "primary" : "secondary"} startContent={<PiCertificateFill />} className="text-white">
                 Certificate
               </Button>
               <Button
-                color="primary"
+                color={idx % 2 == 0 ? "primary" : "secondary"}
                 variant="bordered"
                 endContent={<PiArrowRightBold />}
               >

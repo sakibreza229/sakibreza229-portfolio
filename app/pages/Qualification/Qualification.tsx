@@ -5,7 +5,7 @@ import Timeline from "@/app/components/Timeline/Timeline";
 import AwardCard from "@/app/components/AwardCard";
 import { experience, education, awardsData } from "@/app/data/QualificationData";
 import { HiBriefcase } from "react-icons/hi2";
-import { FaUserGraduate, FaTrophy, FaAward } from "react-icons/fa6";
+import { FaUserGraduate, FaTrophy } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
 import { Button } from "@nextui-org/react";
 
@@ -31,15 +31,10 @@ const Qualification = () => {
       icon: <FaTrophy className="text-lg" />,
       label: "Achievements",
     },
-    {
-      id: Tabs.CERTIFICATES,
-      icon: <FaAward className="text-lg" />,
-      label: "Certificates",
-    },
   ];
 
   return (
-    <section className="qualification section-container">
+    <section id="qualification" className="section-container section-qualification">
       <HeadingPrimary
         title="Qualification"
         subtitle="My Personal Journey"
@@ -62,7 +57,7 @@ const Qualification = () => {
           <button
             key={tab.id}
             className={`font-medium cursor-pointer hover:text-primary-hover inline-flex items-center gap-x-1 ${
-              activeTab === tab.id ? "text-primary" : "text-gray-500"
+              activeTab === tab.id ? "text-primary" : "text-primary-light"
             }`}
             onClick={() => setActiveTab(tab.id)}
           >
@@ -78,13 +73,6 @@ const Qualification = () => {
         )}
         {activeTab === Tabs.EDUCATION && <Timeline timelineData={education} />}
         {activeTab === Tabs.ACHIEVEMENTS && <AwardCard awardsData={awardsData} />}
-        {activeTab === Tabs.CERTIFICATES && (
-          <div className="text-center py-8">
-            <h3 className="text-xl font-semibold text-gray-600">
-              Certificates Coming Soon
-            </h3>
-          </div>
-        )}
       </div>
     </section>
   );

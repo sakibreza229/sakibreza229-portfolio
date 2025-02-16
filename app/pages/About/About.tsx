@@ -6,13 +6,16 @@ import { Button } from "@nextui-org/react";
 import {
   FaDownload,
   FaPlay,
-  FaHourglassHalf,
-  FaClipboardCheck,
-  FaMedal,
-  FaUsers,
+  FaUser,
+  FaCalendar,
+  FaUserGraduate,
+  FaEnvelope,
+  FaGlobe,
+  FaLocationDot,
 } from "react-icons/fa6";
+import { BsFillBriefcaseFill } from "react-icons/bs";
+import { FaGlobeAmericas } from "react-icons/fa";
 import { Tabs, Tab } from "@nextui-org/react";
-import AboutStory from "./AboutStory";
 
 const About = () => {
   return (
@@ -38,7 +41,7 @@ const About = () => {
             aria-label="Options"
             classNames={{
               tabList:
-                "gap-6 w-full relative rounded-none p-0 border-b border-primary-light",
+                "gap-6 w-full relative rounded-none p-0 border-b border-divider",
               cursor: "w-full",
               tab: "max-w-fit px-0",
               tabContent: "font-medium text-sm",
@@ -48,42 +51,46 @@ const About = () => {
             className="w-full"
           >
             <Tab key="personal-info" title="Personal Info">
-              <h3 className="font-semibold text-3xl mb-2 capitalize">
+              <h3 className="font-semibold font-secondary text-3xl mb-2 capitalize">
                 unmatched service for over 10 years
               </h3>
               <p className="mb-6 leading-snug">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Tempore cupiditate itaque velit consequatur sint quisquam
-                architecto ipsa neque ratione earum.
+                architecto ipsa neque <a className="text-primary font-medium hover:underline" href="#">Learn More</a>.
               </p>
 
               {/* About Info Grid */}
               <div className="grid grid-cols-2 gap-y-2">
-                <AboutInfo icon={FaUsers} label="Name" text="Sakib Reza" />
+                <div className="space-y-2">
+                <AboutInfo icon={FaUser} label="Name" text="Sakib Reza" />
                 <AboutInfo
-                  icon={FaUsers}
-                  label="Website"
-                  text="sakibreza.com"
-                />
-                <AboutInfo icon={FaHourglassHalf} label="Age" text="25" />
-                <AboutInfo
-                  icon={FaClipboardCheck}
-                  label="Experience"
-                  text="3 Years"
-                />
-                <AboutInfo icon={FaMedal} label="Degree" text="BSc" />
-                <AboutInfo icon={FaUsers} label="Team" text="5 Members" />
-                <AboutInfo icon={FaMedal} label="Freelance" text="BSc" />
-                <AboutInfo
-                  icon={FaUsers}
+                  icon={FaCalendar}
                   label="Date of Birth"
-                  text="5 Members"
+                  text="22 September, 2006"
                 />
+                <AboutInfo icon={FaGlobeAmericas} label="Nationality" text="Bangladeshi" />
+                <AboutInfo
+                  icon={FaUserGraduate}
+                  label="Degree"
+                  text="Computer Science"
+                />
+                </div>
+                <div className="space-y-2">
+                <AboutInfo icon={BsFillBriefcaseFill} label="Freelance" text="Available Right Now" />
+                <AboutInfo icon={FaEnvelope} label="Email" text="sakibreza229@gmail.com" />
+                <AboutInfo icon={FaGlobe } label="Website" text="sakibreza229.netlify.app" />
+                <AboutInfo
+                  icon={FaLocationDot}
+                  label="Address"
+                  text="Dhaka, Bangladesh"
+                />
+                </div>
               </div>
             </Tab>
             <Tab key="my-story" title="My Story">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minima laborum, esse provident consequatur odio ipsum enim optio qui? Ea deleniti eum recusandae enim placeat nihil repudiandae totam iusto, nesciunt unde tempore. Repudiandae quis, magnam optio minus nam a atque laboriosam reprehenderit facilis minima veniam assumenda voluptatum officia aliquid, veritatis cumque cupiditate omnis. Illum molestias id quae, aperiam, maiores magnam minima praesentium deleniti saepe ducimus inventore omnis doloremque ab modi, est nemo voluptate iste. Maxime perferendis repellendus ipsa a, facere nihil? Nulla deserunt molestiae cumque nesciunt earum? Alias ratione saepe aspernatur rem maiores recusandae, velit omnis, tempore voluptas cupiditate hic?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minima laborum, esse provident consequatur odio ipsum enim optio qui? Ea deleniti eum recusandae enim placeat nihil repudiandae totam iusto, nesciunt unde tempore. Repudiandae quis, magnam optio minus nam a atque laboriosam reprehenderit facilis minima veniam assumenda voluptatum officia aliquid, veritatis cumque cupiditate omnis. Illum molestias id quae, aperiam, maiores magnam minima praesentium deleniti saepe ducimus inventore omnis doloremque ab modi, est nemo voluptate iste. Maxime perferendis repellendus ipsa a, facere nihil? Nulla deserunt molestiae cumque nesciunt earum? Alias ratione saepe aspernatur rem maiores recusandae, velit omnis, tempore voluptas cupiditate hic? <a href="#" className="text-primary font-medium hover:underline">Read More</a>
               </p>
             </Tab>
             <Tab key="hobby" title="Beside Code">
@@ -121,7 +128,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <AboutStory />
     </section>
   );
 };

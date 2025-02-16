@@ -20,8 +20,8 @@ const Timeline: React.FC<TimelineProps> = ({ timelineData }) => {
       <div className="h-full w-[3px] bg-primary absolute left-[19px] md:left-1/2 -translate-x-1/2"></div>
       {timelineData.map((item, index) => (
         <div className={`flex ${item.rowClass}`} key={index}>
-          <div className="timeline-card relative bg-white p-5 shadow-lg hover:shadow-2xl rounded-xl mb-4 transition-shadow before:absolute before:content-[''] before:h-[15px] before:w-[15px] before:bg-white before:top-8 before:rotate-45 group">
-            <span className="icon text-primary absolute -left-[60px] md:left-auto bg-white p-1 text-2xl group-hover:bg-primary group-hover:text-white transition-all duration-300 ease-in-out border-[3px] border-solid border-primary rounded-full">
+          <div className="timeline-card relative bg-container p-5 shadow-lg hover:shadow-2xl rounded-xl mb-4 transition-shadow before:absolute before:content-[''] before:h-[15px] before:w-[15px] before:bg-container before:top-8 before:rotate-45 group">
+            <span className="icon text-primary absolute -left-[60px] md:left-auto bg-background p-1 text-2xl group-hover:bg-primary group-hover:text-container transition-all duration-300 ease-in-out border-[3px] border-solid border-primary rounded-full">
               {item.icon}
             </span>
             <div>

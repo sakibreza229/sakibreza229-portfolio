@@ -86,12 +86,24 @@ module.exports = {
             foreground: "#000033",
             container: "#F5F5FF",
             layout: "#CCCCFF",
+            divider: "#C4CBFF",
 
             // light mode primary color
             primary: {
               DEFAULT: "#6C6CFF",
               hover: "#573DEE",
-              light: "#C4CBFF",
+              light: "#a3a3ff",
+              "50": "#edefff",
+              "100": "#dee3ff",
+              "200": "#c4cbff",
+              "300": "#a0a8ff",
+              "400": "#6c6cff",
+              "500": "#675bf9",
+              "600": "#573dee",
+              "700": "#4b2fd3",
+              "800": "#3d29aa",
+              "900": "#352986",
+              "950": "#21184e",
             },
 
             // light mode secondary color
@@ -104,11 +116,11 @@ module.exports = {
             foreground: "#FFFFFF",
             container: "#1F2544",
             layout: "#151527",
+            divider: "#7A7AFF",
 
             // dark mode primary color
             primary: {
               DEFAULT: "#6364FF",
-              light: "#7A7AFF",
             },
 
             // dark mode secondary color

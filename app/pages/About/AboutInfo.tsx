@@ -9,10 +9,10 @@ type AboutInfoProps = {
 
 const AboutInfo: React.FC<AboutInfoProps> = ({ icon: Icon, label, text }) => {
   return (
-    <div className="flex items-center gap-x-2">
-      <Icon className="text-gray-400 dark:text-gray-300" /> {/* Render the passed icon with a size class */}
-      <h4 className="font-medium text-gray-500 dark:text-white">{label}:</h4> {/* Dynamic label with color and spacing */}
-      <p className="">{text}</p> {/* Dynamic text with color class */}
+    <div className="flex items-center gap-x-1">
+      <Icon className="text-primary" /> {/* Render the passed icon with a size class */}
+      <h4 className="font-medium font-secondary">{label}:</h4> {/* Dynamic label with color and spacing */}
+      <p className="ml-1">{text}</p> {/* Dynamic text with color class */}
     </div>
   );
 };

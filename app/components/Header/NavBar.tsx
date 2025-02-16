@@ -57,9 +57,9 @@ const NavBar: React.FC = () => {
       <div className="flex justify-around items-center sm:justify-center sm:gap-x-8 md:gap-x-6">
         <NavItem sectionId="#hero" navName="Home" navIcon={<TbHome />} />
         <NavItem sectionId="#about" navName="About" navIcon={<TbUserHexagon />} />
+        <NavItem sectionId="#qualification" navName="Qualification" navIcon={<PiMonitorPlay />} />
         <NavItem sectionId="#services" navName="Services" navIcon={<TbBriefcase />} />
         <NavItem sectionId="#portfolio" navName="Portfolio" navIcon={<TbFolder />} />
-        <NavItem sectionId="#courses" navName="Courses" navIcon={<PiMonitorPlay />} />
         <NavItem sectionId="#blogs" navName="Blogs" navIcon={<TbFileText />} />
       </div>
     </div>

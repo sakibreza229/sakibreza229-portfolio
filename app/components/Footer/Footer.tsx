@@ -12,7 +12,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="pb-12 lg:pb-0 relative">
-      <div className="bg-layout border-y-2 border-solid border-primary-light px-2 pt-24 md:pt-36 lg:pt-28 pb-12">
+      <div className="bg-layout border-y-2 border-solid border-divider px-2 pt-24 md:pt-36 lg:pt-28 pb-12">
         <div className="grid grid-cols-1 items-center justify-center gap-y-5 lg:grid-cols-3 max-w-screen-xl mx-auto px-8">
           {/* footer title */}
           <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center gap-2">
