@@ -49,14 +49,7 @@ const BlogCard: React.FC<{ item: Blog }> = ({
             <span className="text-sm font-secondary text-white">Exclusive</span>
           </div>
           {/* Read Button */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 font-semibold text-primary-light/90 hover:text-primary transition-colors text-base">
-            <button
-              className="flex items-center gap-x-2"
-              aria-label="Explore the Article"
-            >
-              Explore the Article <FaArrowUpRightFromSquare />
-            </button>
-          </div>
+              <FaEye  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-white/50 group-hover:scale-125 transition-transform ease-linear duration-500 text-6xl"/>
         </div>
       </div>
 
@@ -105,7 +98,7 @@ const BlogCard: React.FC<{ item: Blog }> = ({
           </div>
           <div className="text-primary text-lg flex items-center gap-x-3">
             <Link href={link}>
-              <FaEye aria-label="View" />
+              <FaArrowUpRightFromSquare aria-label="View" />
             </Link>
             <FaShareFromSquare aria-label="Share" />
           </div>

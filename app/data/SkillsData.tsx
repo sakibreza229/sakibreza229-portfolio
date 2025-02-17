@@ -94,8 +94,8 @@ export const languages = [
           gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stopColor="#B8B8B8" stop-opacity=".498"></stop>
-          <stop offset="1" stopColor="#7F7F7F" stop-opacity="0"></stop>
+          <stop offset="0" stopColor="#B8B8B8" stopOpacity=".498"></stop>
+          <stop offset="1" stopColor="#7F7F7F" stopOpacity="0"></stop>
         </radialGradient>
         <path
           opacity=".444"
@@ -456,8 +456,8 @@ export const frameworks = [
           y2="18.431"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".377" stopColor="#fff" stop-opacity="0"></stop>
-          <stop offset=".666" stopColor="#fff" stop-opacity=".3"></stop>
+          <stop offset=".377" stopColor="#fff" stopOpacity="0"></stop>
+          <stop offset=".666" stopColor="#fff" stopOpacity=".3"></stop>
           <stop offset=".988" stopColor="#fff"></stop>
         </linearGradient>
         <rect
@@ -476,8 +476,8 @@ export const frameworks = [
           gradientUnits="userSpaceOnUse"
         >
           <stop offset=".296" stopColor="#fff"></stop>
-          <stop offset=".521" stopColor="#fff" stop-opacity=".5"></stop>
-          <stop offset=".838" stopColor="#fff" stop-opacity="0"></stop>
+          <stop offset=".521" stopColor="#fff" stopOpacity=".5"></stop>
+          <stop offset=".838" stopColor="#fff" stopOpacity="0"></stop>
         </linearGradient>
         <polygon
           fill="url(#NRNx2IPDe7PJlJvrxOKgWc_MWiBjkuHeMVq_gr3)"
@@ -1007,7 +1007,7 @@ export const tools = [
             gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stopColor="#34364e" stop-opacity=".98"></stop>
+            <stop offset="0" stopColor="#34364e" stopOpacity=".98"></stop>
             <stop offset="1" stopColor="#0c0824"></stop>
           </radialGradient>
           <path
@@ -1046,7 +1046,7 @@ export const tools = [
             gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stopColor="#423325" stop-opacity=".98"></stop>
+            <stop offset="0" stopColor="#423325" stopOpacity=".98"></stop>
             <stop offset="1" stopColor="#1c0a00"></stop>
           </radialGradient>
           <path

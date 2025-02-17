@@ -8,11 +8,15 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import Image from "next/image";
+import Newsletter from "../Newsletter";
 
 const Footer = () => {
   return (
     <footer className="pb-12 lg:pb-0 relative">
-      <div className="bg-layout border-y-2 border-solid border-divider px-2 pt-24 md:pt-36 lg:pt-28 pb-12">
+      <div className="bg-primary md:bg-transparent md:absolute -top-[88px] lg:-top-20 left-1/2 md:-translate-x-1/2 max-w-screen-lg w-full">
+        <Newsletter />
+      </div>
+      <div className="bg-primary dark:bg-background text-white border-y-2 border-solid border-divider px-2 pt-24 md:pt-36 lg:pt-28 pb-12">
         <div className="grid grid-cols-1 items-center justify-center gap-y-5 lg:grid-cols-3 max-w-screen-xl mx-auto px-8">
           {/* footer title */}
           <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center gap-2">
@@ -106,7 +110,7 @@ const Footer = () => {
           © 2024 by{" "}
           <a
             href="#"
-            className="text-primary font-primary font-medium hover:underline"
+            className="text-secondary dark:text-primary font-primary font-medium hover:underline"
           >
             Sakib Reza
           </a>{" "}

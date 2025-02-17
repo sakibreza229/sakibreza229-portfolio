@@ -84,3 +84,25 @@ section {
 .swiper-pagination-bullet-active {
   @apply bg-primary !important;
 }
+
+.input::placeholder {
+  opacity: 0 !important; /* Ensures specificity */
+  @apply font-secondary;
+}
+
+input:focus, textarea:focus {
+  @apply outline-none;
+}
+
+.focus input, .focus textarea,
+.input:valid {
+  @apply border-primary transition-colors;
+}
+
+.focus .input-label {
+  @apply bg-background text-primary px-2 -translate-y-1/2 scale-75 left-[8px] transition-all;
+}
+
+.focus ::placeholder {
+  opacity: 1 !important;
+}
