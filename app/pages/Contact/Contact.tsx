@@ -30,7 +30,7 @@ const Contact = () => {
       <div className="flex flex-col gap-8">
         <div className="grid grid-cols-1 md:grid-cols-[1.75fr_2fr] justify-items-center items-center gap-16 order-2 md:order-1">
           <div className="hidden md:block">
-            <img src="/images/contact.svg" alt="Contact Illustration" className="h-72 w-[480px]" />
+            <img src="/images/contact.webp" alt="Contact Illustration" className="h-72 w-[480px]" />
           </div>
           <form onSubmit={handleSubmit} className="w-full">
             <div className="space-y-4 mb-4">
