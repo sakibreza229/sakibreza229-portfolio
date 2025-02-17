@@ -2,63 +2,148 @@
 @tailwind components;
 @tailwind utilities;
 
-/* layout style */
+/* ==================== */
+/* Global Styles */
+/* ==================== */
+
+/* Smooth scrolling for the entire page */
 html {
   @apply scroll-smooth;
 }
 
+/* Custom selection style */
 ::selection {
   @apply bg-primary text-white;
 }
 
+/* ==================== */
+/* Layout Styles */
+/* ==================== */
+
+/* Section spacing */
 section {
   @apply pt-12 py-8;
 }
 
+/* Container for sections with max-width and responsive padding */
 .section-container {
   @apply max-w-screen-xl mx-auto px-2 lg:px-8;
 }
 
-/* header styles */
+/* ==================== */
+/* Header Styles */
+/* ==================== */
+
+/* Sticky header style on scroll */
 .scroll-header {
   @apply bg-white dark:bg-[#151527] [box-shadow:0_1px_12px_hsla(234,5%,15%,0.15)] dark:[box-shadow:0_1px_8px_hsla(254,5%,15%,0.35)];
 }
 
+/* Navigation bar height and logo styling */
 .scroll-header .nav {
   height: 3.5rem;
   @apply text-foreground;
-  .nav-logo a {
-    @apply text-[#000047] dark:text-[#a3a3ff] hover:text-primary-hover;
-  }
 }
 
+.scroll-header .nav-logo a {
+  @apply text-[#000047] dark:text-[#a3a3ff] hover:text-primary-hover;
+}
+
+/* ==================== */
+/* Navigation Styles */
+/* ==================== */
+
+/* Default navigation bar height */
 .nav {
   height: 5rem;
 }
 
+/* Active link styling */
 .active-link {
   @apply text-primary;
-  transition: .3s;
+  transition: 0.3s;
 }
 
+/* Indicator for active link (mobile) */
 .active-link::before {
   content: '';
   position: absolute;
   bottom: -8px;
-  @apply w-2 h-1 rounded-l-full rounded-r-full md:hidden bg-primary; 
+  @apply w-2 h-1 rounded-l-full rounded-r-full md:hidden bg-primary;
 }
 
+/* ==================== */
+/* Button Styles */
+/* ==================== */
+
+/* Custom arrow button style */
 .arrow-btn {
   @apply font-medium text-primary cursor-pointer inline-flex items-center;
   gap: 6px;
 }
 
+/* Arrow animation on hover */
 .arrow-btn:hover .arrow {
   transform: translateX(0.25rem);
   transition: all 0.3s ease;
 }
 
-/* extra animations */
+/* ==================== */
+/* Input Styles */
+/* ==================== */
+
+/* Placeholder styling for inputs */
+.input::placeholder {
+  opacity: 0 !important; /* Ensures specificity */
+  @apply font-secondary;
+}
+
+/* Remove default outline on focus */
+input:focus,
+textarea:focus {
+  @apply outline-none;
+}
+
+/* Focus state for inputs and textareas */
+.focus input,
+.focus textarea,
+.input:valid {
+  @apply border-primary transition-colors;
+}
+
+/* Label animation on focus */
+.focus .input-label {
+  @apply bg-background text-primary px-2 -translate-y-1/2 scale-75 left-[8px] transition-all;
+}
+
+/* Placeholder visibility on focus */
+.focus ::placeholder {
+  opacity: 1 !important;
+}
+
+/* ==================== */
+/* Swiper Styles */
+/* ==================== */
+
+/* Swiper container padding */
+.swiper {
+  padding-bottom: 2.5rem !important;
+}
+
+/* Swiper pagination bullet styling */
+.swiper-pagination-bullet {
+  @apply bg-primary-light !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary !important;
+}
+
+/* ==================== */
+/* Animations */
+/* ==================== */
+
+/* Bounce-up animation */
 .animate-bounceUp {
   animation: bounceUp 2s infinite ease-in-out;
 }
@@ -70,39 +155,4 @@ section {
   50% {
     transform: translateY(-5px);
   }
-}
-
-/* swiper style */
-
-.swiper {
-  padding-bottom: 2.5rem !important;
-}
-.swiper-pagination-bullet {
-  @apply bg-primary-light !important;
-}
-
-.swiper-pagination-bullet-active {
-  @apply bg-primary !important;
-}
-
-.input::placeholder {
-  opacity: 0 !important; /* Ensures specificity */
-  @apply font-secondary;
-}
-
-input:focus, textarea:focus {
-  @apply outline-none;
-}
-
-.focus input, .focus textarea,
-.input:valid {
-  @apply border-primary transition-colors;
-}
-
-.focus .input-label {
-  @apply bg-background text-primary px-2 -translate-y-1/2 scale-75 left-[8px] transition-all;
-}
-
-.focus ::placeholder {
-  opacity: 1 !important;
 }
