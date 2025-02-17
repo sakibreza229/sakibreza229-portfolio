@@ -5,7 +5,7 @@ import { Button } from '@nextui-org/react';
 
 const Newsletter = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-x-12 gap-y-6 bg-secondary text-white px-6 lg:px-12 py-6 rounded-2xl text-center md:text-left">
+    <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-x-12 gap-y-6 bg-secondary text-white px-6 lg:px-12 py-6 rounded-[4rem] text-center md:text-left">
       <div>
         <h3 className="text-xl font-secondary font-semibold mb-1">
           Subscribe to my Newsletter!

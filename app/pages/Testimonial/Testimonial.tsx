@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 // Import required modules
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { BiSolidQuoteLeft } from "react-icons/bi";
-import { Avatar } from '@nextui-org/react';
+import { Avatar, Button } from '@nextui-org/react';
 import LogoTicker from '@/app/components/LogoTicker';
 
 // Define the type for a testimonial object
@@ -61,12 +61,12 @@ const Testimonial = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <button className="prev-testimonial absolute left-0 top-1/2 -translate-y-1/2 z-[1] bg-container p-3 text-primary rounded-2xl shadow-lg active:scale-90">
+        <Button isIconOnly variant='flat' color='primary' className="prev-testimonial absolute left-0 top-1/2 -translate-y-1/2 z-[1] shadow-lg">
           <FaAngleLeft className="text-xl" />
-        </button>
-        <button className="next-testimonial absolute right-0 top-1/2 -translate-y-1/2 z-[1] bg-container p-3 text-primary rounded-2xl shadow-lg active:scale-90">
+        </Button>
+        <Button isIconOnly variant='flat' color='primary' className="next-testimonial absolute right-0 top-1/2 -translate-y-1/2 z-[1] shadow-lg">
           <FaAngleRight className="text-xl" />
-        </button>
+        </Button>
       </div>
       <LogoTicker />
     </section>
