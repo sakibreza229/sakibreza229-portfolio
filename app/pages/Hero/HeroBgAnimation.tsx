@@ -1,6 +1,7 @@
 import React from "react";
 
 const HeroBgAnimation = () => {
+  // Data for filled squares
   const filledSquares = [
     { left: 25, size: 80, animationDelay: 0, animationDuration: 15 },
     { left: 10, size: 20, animationDelay: 2, animationDuration: 12 },
@@ -8,6 +9,8 @@ const HeroBgAnimation = () => {
     { left: 40, size: 60, animationDelay: 0, animationDuration: 20 },
     { left: 65, size: 20, animationDelay: 3, animationDuration: 14 },
   ];
+
+  // Data for bordered squares
   const borderedSquares = [
     { left: 50, size: 40, animationDelay: 0, animationDuration: 16 },
     { left: 90, size: 70, animationDelay: 2, animationDuration: 14 },
@@ -18,9 +21,10 @@ const HeroBgAnimation = () => {
 
   return (
     <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+      {/* Render filled squares */}
       {filledSquares.map((square, index) => (
         <span
-          key={index}
+          key={`filled-${index}`} // Unique key for each filled square
           className="block absolute -bottom-36 bg-[#b8b8ff] dark:bg-[#3f3f6e] rounded animate-rotate-up"
           style={{
             left: `${square.left}%`,
@@ -31,9 +35,11 @@ const HeroBgAnimation = () => {
           }}
         ></span>
       ))}
+
+      {/* Render bordered squares */}
       {borderedSquares.map((square, index) => (
         <span
-          key={index}
+          key={`bordered-${index}`} // Unique key for each bordered square
           className="block absolute -bottom-12 bg-transparent border-2 border-[#b8b8ff] dark:border-[#5a5a90] rounded animate-rotate-up"
           style={{
             left: `${square.left}%`,

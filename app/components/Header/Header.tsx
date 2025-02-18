@@ -63,14 +63,11 @@ const Header = () => {
             {/* Link to the homepage */}
             <Link
               href="#"
-              className="font-bold leading-3 text-lg sm:text-xl font-secondary text-foreground hover:text-primary transition-colors"
+              className="font-bold text-xl sm:text-2xl font-secondary text-foreground hover:text-primary transition-colors"
             >
               Sakib Reza<span className="text-primary">.</span>{" "}
               {/* Highlight the dot with primary color */}
             </Link>
-
-            {/* Passion */}
-            <p className="text-sm text-primary/70">Fullstack Developer</p>
           </div>
         </div>
 
