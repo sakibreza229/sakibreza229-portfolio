@@ -1,30 +1,37 @@
 import React from "react";
 import { HeadingSecondary } from "@/app/components/Headings";
 import Image from "next/image";
-import AboutInfo from "./AboutInfo";
-import { Button } from "@nextui-org/react";
-import {
-  FaDownload,
-  FaPlay,
-  FaUser,
-  FaCalendar,
-  FaUserGraduate,
-  FaEnvelope,
-  FaGlobe,
-  FaLocationDot,
-} from "react-icons/fa6";
-import { BsFillBriefcaseFill } from "react-icons/bs";
-import { FaGlobeAmericas } from "react-icons/fa";
+import { FaDownload, FaPlay, FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { Tabs, Tab } from "@nextui-org/react";
+import AboutBrief from "./AboutBrief";
+import AboutInterests from "./AboutInterests";
+import AboutInfos from "./AboutInfos";
+import {
+  Modal,
+  ModalContent,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+} from "@nextui-org/react";
 
+/**
+ * About Component
+ *
+ * This component represents the "About Me" section of the portfolio.
+ * It includes a brief introduction, personal information, hobbies, and action buttons.
+ */
 const About = () => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
     <section id="about" className="section-container section-about">
-      {/* Heading */}
+      {/* Section Heading */}
       <HeadingSecondary title="About Me" subtitle="Introducing myself" />
 
+      {/* Content Container */}
       <div className="flex flex-col md:flex-row justify-center items-start gap-y-6 gap-x-12 mb-6">
-        {/* About Image */}
+        {/* About Image Section */}
         <div className="w-full md:w-[40%] shadow-md overflow-hidden">
           <Image
             src="/images/about-img.webp"
@@ -32,75 +39,60 @@ const About = () => {
             width={378}
             height={176}
             className="w-full h-full rounded-xl object-cover"
+            priority // Ensures the image is loaded with high priority
           />
         </div>
 
-        {/* About Content */}
+        {/* About Content Section */}
         <div className="w-full md:w-[60%]">
+          {/* Tabs for Personal Info, My Story, and Beyond Coding */}
           <Tabs
-            aria-label="Options"
+            aria-label="About Me Tabs"
             classNames={{
               tabList:
                 "gap-6 w-full relative rounded-none p-0 border-b border-divider",
               cursor: "w-full",
               tab: "max-w-fit px-0",
-              tabContent: "font-medium text-sm",
+              tabContent: "font-medium text-sm text-secondary",
             }}
             color="primary"
             variant="underlined"
             className="w-full"
           >
+            {/* Personal Info Tab */}
             <Tab key="personal-info" title="Personal Info">
-              <h3 className="font-semibold font-secondary text-3xl mb-2 capitalize">
-                unmatched service for over 10 years
+              <h3 className="font-semibold font-secondary text-2xl mb-2 capitalize">
+                Building, Learning, Innovating, Growing
               </h3>
-              <p className="mb-6 leading-snug">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Tempore cupiditate itaque velit consequatur sint quisquam
-                architecto ipsa neque <a className="text-primary font-medium hover:underline" href="#">Learn More</a>.
+              <p className="mb-4 leading-snug">
+                I’m a full-stack developer passionate about crafting seamless
+                web, mobile, and desktop applications, focusing on performance,
+                user experience, and innovation to build scalable, efficient
+                solutions that bring ideas to life.{" "}
+                <a
+                  className="text-primary hover:text-primary-hover font-medium transition-colors inline-flex gap-x-1 items-center"
+                  href="#"
+                >
+                  Explore my journey <FaArrowUpRightFromSquare />
+                </a>
               </p>
+              <AboutInfos />
+            </Tab>
 
-              {/* About Info Grid */}
-              <div className="grid grid-cols-2 gap-y-2">
-                <div className="space-y-2">
-                <AboutInfo icon={FaUser} label="Name" text="Sakib Reza" />
-                <AboutInfo
-                  icon={FaCalendar}
-                  label="Date of Birth"
-                  text="22 September, 2006"
-                />
-                <AboutInfo icon={FaGlobeAmericas} label="Nationality" text="Bangladeshi" />
-                <AboutInfo
-                  icon={FaUserGraduate}
-                  label="Degree"
-                  text="Computer Science"
-                />
-                </div>
-                <div className="space-y-2">
-                <AboutInfo icon={BsFillBriefcaseFill} label="Freelance" text="Available Right Now" />
-                <AboutInfo icon={FaEnvelope} label="Email" text="sakibreza229@gmail.com" />
-                <AboutInfo icon={FaGlobe } label="Website" text="sakibreza229.netlify.app" />
-                <AboutInfo
-                  icon={FaLocationDot}
-                  label="Address"
-                  text="Dhaka, Bangladesh"
-                />
-                </div>
-              </div>
-            </Tab>
+            {/* My Story Tab */}
             <Tab key="my-story" title="My Story">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minima laborum, esse provident consequatur odio ipsum enim optio qui? Ea deleniti eum recusandae enim placeat nihil repudiandae totam iusto, nesciunt unde tempore. Repudiandae quis, magnam optio minus nam a atque laboriosam reprehenderit facilis minima veniam assumenda voluptatum officia aliquid, veritatis cumque cupiditate omnis. Illum molestias id quae, aperiam, maiores magnam minima praesentium deleniti saepe ducimus inventore omnis doloremque ab modi, est nemo voluptate iste. Maxime perferendis repellendus ipsa a, facere nihil? Nulla deserunt molestiae cumque nesciunt earum? Alias ratione saepe aspernatur rem maiores recusandae, velit omnis, tempore voluptas cupiditate hic? <a href="#" className="text-primary font-medium hover:underline">Read More</a>
-              </p>
+              <AboutBrief />
             </Tab>
-            <Tab key="hobby" title="Beside Code">
-              <div className="w-full h-64 bg-container rounded-xl">
-                s
-              </div>
+
+            {/* Beyond Coding Tab */}
+            <Tab key="hobby" title="Beyond Coding">
+              <AboutInterests />
             </Tab>
           </Tabs>
+
           {/* Action Buttons */}
           <div className="flex justify-center items-center gap-4 md:justify-start mt-4">
+            {/* Download CV Button */}
             <Button color="primary" endContent={<FaDownload />}>
               <a
                 href="assets/documents/Sakib Reza - CV.pdf"
@@ -111,23 +103,73 @@ const About = () => {
                 Download CV
               </a>
             </Button>
+
+            {/* Watch Intro Button */}
             <Button
               color="primary"
               variant="bordered"
               startContent={<FaPlay />}
+              onPress={onOpen}
             >
-              <a
-                href="#"
-                className="no-underline text-primary"
-                rel="noopener noreferrer"
-                aria-label="Watch introduction video"
-              >
-                Watch Intro
-              </a>
+              Watch Intro
             </Button>
           </div>
         </div>
       </div>
+
+      {/* Intro Modal */}
+      <Modal
+        size="xl"
+        radius="lg"
+        hideCloseButton
+        placement="center"
+        backdrop="blur"
+        scrollBehavior="inside"
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        classNames={{
+          body: "pb-4 pt-0 px-0",
+          base: "bg-transparent text-[#a8b0d3] p-0 shadow-none",
+          footer: "p-0",
+        }}
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalBody>
+                <video
+                  width="100%"
+                  height="auto"
+                  controls
+                  className="rounded-xl aspect-video"
+                >
+                  <source src="/coming_soon.mp4" type="video/mp4" />
+                  <source src="/coming_soon.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </ModalBody>
+              <ModalFooter>
+                <Button
+                  color="danger"
+                  variant="light"
+                  onPress={onClose}
+                  className="shadow-xl"
+                >
+                  Close
+                </Button>
+                <Button
+                  color="primary"
+                  variant="flat"
+                  onPress={onClose}
+                  className="shadow-xl"
+                >
+                  Hire Me
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </section>
   );
 };
